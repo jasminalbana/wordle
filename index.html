@@ -4,13 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#121213" />
     <title>Wordle</title> 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" /> 
   </head>
   <body>
-    <h1 class="title">Wordle</h1>
+    <div id="header">
+      <h1>Wordle</h1>
+      <nav>
+        <ul>
+          <li><a href="#" id="changeBG">&#9681</a></li>
+          <li><a href="#" id="hint">&#63</a></li>
+          <li><a href="#" id="inst">&#9432</a></li>
+        </ul>
+      </nav>
+    </div>
     <div id="game"></div>
+    <!-- reset Button -->
+    <button id="resetButton" >Start Over</button>
+    <!-- congratulations -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <img src="congrats.gif">
+      </div>
+    </div>
+    <!-- instructions -->
+    <div>
+      <img id="myImage" class= "instruction" src="Instruction.JPG" style="display:none;">
+    </div>
+    
     <script defer src="index.js" type="module"></script>
   </body>
 </html>

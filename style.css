@@ -8,6 +8,66 @@ body {
   --empty: #3a3a3c;
   --wrong: #b59f3b;
   --right: #538d4e;
+  --darkBG: #0a100978;
+}
+
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin-left: 13%;
+  font-size: 24px;
+  text-align: center;
+  flex-grow: 1;
+
+}
+
+nav {
+  display: block;
+  text-align: left;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #3e8e41;
+}
+
+button#resetButton {
+  position: absolute;
+  left:46%; 
+  bottom:100px;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+button#resetButton:hover {
+  background-color: #3e8e41;
 }
 
 #game {
@@ -75,3 +135,78 @@ body {
   position: relative;
 }
 
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 25%;
+  top: 10%;
+  width: 50%; 
+  height: 65%; 
+  overflow: auto;
+  background-color: white; 
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  width: 80%;
+  max-width: 700px;
+  max-height: 80%;
+  text-align: center;
+}
+
+.modal-content img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.instruction {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 23%;
+  top: 10%;
+  width: 65%; 
+  height: 75%; 
+  overflow: auto;
+  background-color: white; 
+}
+
+.instruction-content {
+  display: block;
+  margin: auto;
+  width: 80%;
+  max-width: 700px;
+  max-height: 90%;
+  text-align: center;
+}
+
+.instruction-content img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.message {
+  background-color: red;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+.hint {
+  background-color: pink;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+}
